@@ -1,0 +1,92 @@
+.App {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-bottom: 60px;
+  }
+  
+  .errors {
+    color: red;
+    margin: 8px 0px;
+  }
+  .App-logo {
+    margin-top: 10%;
+    height: 15vh;
+    pointer-events: none;
+  }
+  
+  .Authentication-form {
+      width: 240px;
+  }
+  .Authentication-button {
+    margin-top: 16px;
+    padding: 6px 0;
+    background-color: #61dafb;
+    border-radius: 4px;
+    border: 1px solid #61dafb;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-name {
+    color: #52aac5;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .Gender-row {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
+  .SignUp-row {
+    display: flex;
+    padding-top: 6px;
+    align-items: center;
+  }
+  .SignUp-text {
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding-left: 6px;
+    text-decoration: none;
+  }
+
+  input[type="radio" i] {
+    width: fit-content;
+  }
+  input, label {
+    display: block;
+  }
+  label {
+    margin: 8px 0;
+  }
+  input {
+    border-width: 0;
+    padding: 4px;
+    width: 232px;
+    height: 24px;
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
