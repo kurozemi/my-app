@@ -7,10 +7,18 @@ import SignUp from "./signup/SignUp";
 const axios = require('axios').default;
 const Authentication = () => {
 
-    axios
-    .get('https://technowz.000webhostapp.com/test.php')
-    .then(response => console.log(response))
-    
+    let headers = {
+        "userid": 69,
+    }
+    let obj = {
+        name: 'kurozemi',
+        age: 24,
+    }
+
+    // axios.defaults.headers.common['AXIOS'] = 'true';
+    axios.get('http://technowdb.phuhanh.com.vn/api/test.php')
+    .then(response => console.log(response.data))
+
     const [isLogin, setIsLogin] = useState(true);
     return (
         <div className="App">
